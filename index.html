@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Café de Wisteria</title>
+    <!--I found this pixel font and copied font code from google fonts^^-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+      body {
+      font-family: Pixelify Sans, sans-serif;
+      background-color: plum;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 px;
+      box-sizing: border-box;
+      }
+
+      /*header styles*/
+      #header-img {
+      width: 100%;
+      border-radius: 20px;
+      }
+
+      h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 35px 0;
+      position: relative;
+      }
+
+      nav {
+      background-color:;
+      }
+
+      ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px 0;
+      margin: 0;
+      background-color: #ffbcd9;
+      border-radius: 10px;
+      }
+
+      li {
+      background-color: plum;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 10px;
+      }
+
+      li:hover {
+      background-color: #ffbcd9;
+      }
+
+      li > a {
+      text-decoration: none;
+      color: black;
+      }
+
+      /*cake styles*/
+      #menu {
+      text-align: center;
+      margin: 20px 0;
+      }
+
+      #cakes {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 10px;
+      max-width: 800px;
+      }
+
+      article {
+      background-color: white;
+      text-align: center;  
+      padding: 10px;   
+      border: 2px solid #ffbcd9; 
+      border-radius: 20px;
+      }
+
+      article:hover {
+      background-color: pink;
+      cursor: pointer;
+      transform: scale(1.02);
+      }
+
+      article > img {
+      width: 40%;
+      }
+
+      #line {
+      margin: 30px 0 0 0;
+      height: 1px;
+      background-color: white;
+      }
+
+      /*order-form styles*/
+      #order-form {
+      text-align: center;
+      margin: 20px 0;
+      padding: 0;
+      }
+
+      form {
+      margin: 0 0px;
+      border: 2px solid white;
+      background-color: #ffbcd9;
+      padding: 20px;
+      }
+
+      textarea {
+      width: 100%;
+      box-sizing: border-box;
+      }
+
+      textarea::placeholder {
+      font-family: Pixelify Sans, sans-serif;
+      }
+
+      input, textarea {
+      border: 2px solid plum;
+      border-radius: 5px;
+      font-family: Pixelify Sans, sans-serif;
+      }
+
+      input[type="submit"] {
+      background-color: white;
+      cursor: pointer;
+      font-family: Pixelify Sans, sans-serif;
+      font-weight: 600;
+      border-radius: 5px;
+      padding: 5px;
+      display: block;
+      margin: 0 auto;
+      }
+
+      input[type="submit"]:hover {
+      background-color: plum;
+      transform: scale(1.02);
+      }
+
+      /*footer styles*/
+      footer > p {
+      margin: 30px 0;
+      text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Here comes header section: image, name and nav elements for my cute café-->
+    <header>
+      <img id="header-img" alt="Café de Wisteria building covered with blooming wisteria flowers, cute black cat sitting on the window, in pixel art style" 
+      src="https://i.pinimg.com/736x/64/88/05/6488057417920a94a048a19a355211d5.jpg">
+      <h1>Café de Wisteria</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Place Your Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Here comes "Menu" section-->
+      <section>
+        <h2 id="menu">Menu</h2>
+        <div id="cakes">
+        <article>
+          <h3>Carrot Cake</h3>
+          <img width="200px" alt="A slice of carrot cake topped with a tiny marzipan carrot" src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FOFYGGP3pOUcel763dDph%2Fcarrot_cake.png?alt=media&token=44460dcc-eacc-481a-9692-1ab9bc936365">
+          <p>A slice of sunshine made from golden carrots and cozy spices</p>
+          <p><i>$2.80</i></p>
+        </article>
+        <article>
+          <h3>Strawberry Cake</h3>
+          <img width="200px" alt="A slice of strawberry cake filled and topped with a fresh strawberry" src="https://i.pinimg.com/736x/d6/b8/c5/d6b8c5657b8047f289a3c997fae9ac34.jpg">
+          <p>A sweet, fluffy cake with heavenly-tasting strawberries</p>
+          <p><i>$3.20</i></p>
+        </article>
+        <article>
+          <h3>Choco-banana Cake</h3>
+          <img width="200px" alt="A slice of chocolate banana cake, topped with banana slices and chocolate chips" src="https://i.pinimg.com/736x/d6/be/2a/d6be2a153d266f07135a90a969095ba9.jpg">
+          <p>A chocolatey banana dream, made for midnight cravings</p>
+          <p><i>$3.40</i></p>
+        </article>
+        </div>
+      </section>
+      <hr id="line">
+
+      <!--Here comes "Place Your Order" form-->
+      <section>
+        <h2 id="order-form">Place Your Order</h2>
+        <form>
+          <!--personal info-->
+           <label for="name">Name </label><input type="text" size="30" id="name"><br><br>
+           <label for="email">Email </label><input type="email" size="30" id="email"><br><br>
+          <!--Cake options-->
+          <h4>It's cake time! What flavor are you in the mood for today?</h4>
+           <label for="carrot">Carrot Cake </label><input type="number" min="0" max="10" id="carrot"><br><br>
+           <label for="strawberry">Strawberry Cake </label><input type="number" min="0" max="10" id="strawberry"><br><br>
+           <label for="choco-banana">Choco-banana Cake </label><input type="number" min="0" max="10" id="choco-banana"><br><br>
+          <!--Herbal teas-->
+          <h4>Would you like to try our Herbal Teas to help you relax and satisfy your sweet cravings?</h4>
+           <input type="radio" id="yes" name="option"><label for="yes">Yeah - I'd love to! </label>
+           <input type="radio" id="no" name="option"><label for="no">Naah, maybe next time. </label><br><br>
+          <h4>Which tea would you prefer?</h4>
+           <label for="lullaby">Lullaby Blend (Chamomile, Lavender, Rose Petals) </label><input type="number" min="0" max="10" id="lullaby"><br><br>
+           <label for="mint">Mint Moonlight (Peppermint, Spearmint, Lemon Balm) </label><input type="number" min="0" max="10" id="mint"><br><br>
+           <label for="ginger">Golden Hug (Ginger, Turmeric, Cinnamon, Honey Crystals) </label><input type="number" min="0" max="10" id="golden"><br><br>
+          <!--Add a note section-->
+          <h4><label for="comment">Let us know if you have any special requests or want to add a message.</label></h4>
+           <textarea rows="8" cols="" id="comment" placeholder="e.g., Please make it extra warm, it's a gift, or no cinnamon please."></textarea><br><br>
+          <!--Submit button-->
+          <input type="submit" value="Go To Checkout😻">
+        </form>
+      </section>
+    </main>
+
+    <!--Last section of this page <3-->
+    <footer>
+      <p>Made with love by <a href="https://www.codedex.io/@MarSianer">@sophiegabe</a></p>
+    </footer>
+  </body>
+</html>
+
+
