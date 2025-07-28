@@ -72,7 +72,7 @@ nav button:active {
 }
 .cafe-name {
     background-color: var(--color-skyblue);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--color-light-purple);
     -webkit-text-stroke: 1px rgb(143, 44, 204);
