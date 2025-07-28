@@ -1,229 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Café de Wisteria</title>
-    <!--I found this pixel font and copied font code from google fonts^^-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <style>
-      body {
-      font-family: Pixelify Sans, sans-serif;
-      background-color: plum;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 px;
-      box-sizing: border-box;
-      }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--tab-->
+        <title>Cafe De Wisteria</title>
+        <link rel="icon" href="assets/carrot_cake.png" type="image/png">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-      /*header styles*/
-      #header-img {
-      width: 100%;
-      border-radius: 20px;
-      }
+    <body>
+        <!--Nav section-->
+        <header>
+            <nav>
+                <div class="nav-left-side">
+                    <button class="menu-button" onclick="document.getElementById('menu-section').scrollIntoView({behavior: 'smooth'})">Menu</button>
+                    <button class="order-form-button" onclick="document.getElementById('order-section').scrollIntoView({behavior: 'smooth'})">Order</button>
+                </div>
+                <div class="nav-right-side">
+                    <button id="music-toggle">
+                        <img id="music-icon" src="assets/music-off-icon.png" alt="Music Off" width="32px" height="32px">
+                    </button>
+                    <button id="theme-switch-button">
+                        <img id="theme-switch-icon" width="32px" height="32px">
+                    </button>   
+                </div>
+                <audio id="background-music" src="cozy-cafe-music.mp3" type="audio/mpeg" loop></audio>
+            </nav>
 
-      h1 {
-      text-align: center;
-      font-size: 50px;
-      margin: 35px 0;
-      position: relative;
-      }
+            <div class="cafe-name">
+                <h1>CAFE DE WISTERIA</h1>
+            </div>   
 
-      nav {
-      background-color:;
-      }
+            <div display="flex">
+                <img id="header-image" src="assets/day-cafe.gif" width="100%">
+            </div>
+        </header>
 
-      ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 5px 0;
-      margin: 0;
-      background-color: #ffbcd9;
-      border-radius: 10px;
-      }
+        <main>
+            <!--Menu Section-->
+            <section id="menu-section">
+                <h2 class="section-title">
+                    Menu
+                </h2>
+                <div class="cakes-grid">
+                    <article class="cake-card">
+                        <img class="cake-pixel-art" src="assets/carrot_cake.png" alt="A slice of carrot cake topped with a tiny marzipan carrot">
+                        <h3 style="color:#fb8420 ">
+                            Carrot Cake
+                        </h3>
+                        <p>
+                            Slice of sunshine made from golden carrots and cozy spices
+                        </p>
+                        <p class="price-tag">
+                            $2.80
+                        </p>
+                    </article>
 
-      li {
-      background-color: plum;
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 10px;
-      }
+                    <article class="cake-card">
+                        <img class="cake-pixel-art" src="assets/strawberry_cake.png" alt="A slice of strawberry cake filled and topped with a fresh strawberry">
+                        <h3 style="color: #c63228">
+                            Strawberry Cake
+                        </h3>
+                        <p>
+                            Sweet, fluffy cake with heavenly tasting strawberries
+                        </p>
+                        <p class="price-tag">
+                            $3.40
+                        </p>
+                    </article>
+                    
+                    <article class="cake-card">
+                        <img class="cake-pixel-art" src="assets/choco-banana_cake.png" alt="A slice of chocolate-banana cake, topped with banana slices and chocolate glaze">
+                        <h3 style="color: #400208">
+                            Choco-banana Cake
+                        </h3>
+                        <p>
+                            Chocolatey banana dream, made for midnight cravings
+                        </p>
+                        <p class="price-tag">
+                            $3.20
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-      li:hover {
-      background-color: #ffbcd9;
-      }
+            <!--Place your order section-->
+            <section id="order-section">
+                <h2 class="section-title">
+                    Place Your Order
+                </h2>
+                <form onsubmit="window.open('https://www.youtube.com/watch?v=jA4u5Pur5KA');">                    
+                    <!--Personal info-->
+                    <div class="personal-info">
+                        <label for="name">
+                            Name
+                        </label>
+                        <input id="name" type="text">
+                    </div>
 
-      li > a {
-      text-decoration: none;
-      color: black;
-      }
+                    <div class="personal-info">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email" type="email">
+                    </div>
 
-      /*cake styles*/
-      #menu {
-      text-align: center;
-      margin: 40px 0 20px 0;
-      }
+                    <!--Cake options-->
+                    <div class="fields">
+                        <h4>
+                            It's a cake time! 💃 Which flavor are you craving today?
+                        </h4>
+                        <label for="carrot-cake">
+                            🥕 Carrot Cake
+                        </label>
+                        <input id="carrot-cake" type="number" min="0" max="10">
+                        <br>
+                        <label for="strawberry-cake">
+                            🍓 Strawberry Cake
+                        </label>
+                        <input id="strawberry-cake" type="number" min="0" max="10">
+                        <br>
+                        <label for="choco-banana-cake">
+                            🍌 Choco-banana Cake
+                        </label>
+                        <input id="choco-banana-cake" type="number" min="0" max="10">
+                    </div>
+                    
 
-      #cakes {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: 0 10px;
-      }
+                    <!--Drink options-->
+                    <div class="fields">
+                        <h4>
+                            What would you like to drink?
+                        </h4>
+                        <label for="pink-drink">
+                            💗 Pink Drink
+                        </label>
+                        <input id="pink-drink" type="number" min="0" max="10">
+                        <br>
+                        <label for="matcha-iced-coffee">
+                            💚 Matcha Iced Coffee
+                        </label>
+                        <input id="matcha-iced-coffee" type="number" min="0" max="10">
+                        <br>
+                        <label for="lavender-milk-tea">
+                            💜 Lavender Milk Tea
+                        </label>
+                        <input id="lavender-milk-tea" type="number" min="0" max="10">
+                    </div>
+                  
 
-      article {
-      background-color: white;
-      text-align: center;  
-      padding: 10px;   
-      border: 2px solid #ffbcd9; 
-      border-radius: 20px;
-      }
+                    <!--Sides-->
+                    <div class="fields">
+                        <h4>
+                            Would you like something on the side?
+                        </h4>
+                        <label for="vanilla-ice-cream">
+                        <input id="vanilla-ice-cream" type="checkbox">
+                            🍨 Vanilla ice-cream
+                        </label>
+                        <br>
+                        <label for="chocolate-dipping-sauce">
+                        <input id="chocolate-dipping-sauce" type="checkbox">
+                            🍫 Chocolate dipping sauce
+                        </label>
+                        <br>
+                        <label for="cup-of-fruits">
+                        <input id="cup-of-fruits" type="checkbox">
+                            🍍 Small cup of fresh fruit
+                        </label>
+                    </div>
 
-      article:hover {
-      background-color: pink;
-      cursor: pointer;
-      transform: scale(1.02);
-      }
 
-      article > img {
-      width: 40%;
-      }
+                    <!--Special requests-->
+                    <div class="fields">
+                        <h4>
+                            Let us know if you have any special requests or want to add a message.
+                        </h4>
+                        <textarea placeholder="Add notes like no nuts, extra napkins, or gift wrap it please."></textarea>  
+                    </div>
 
-      #line {
-      margin: 30px 0 0 0;
-      height: 1px;
-      background-color: white;
-      }
+                    <!--Checkout button-->
+                    <div class="submit-button-wrapper">
+                        <input type="submit" value="Go To Checkout 💃">
+                    </div>
+                </form>
+            </section>
 
-      /*order-form styles*/
-      #order-form {
-      text-align: center;
-      margin: 40px 0 20px 0;
-      padding: 0;
-      }
+            <!--Footer-->
+            <footer>
+                <img class="cloud-left" src="assets/cloud-big.png" alt="Big cloud pixel art">
+               
+                <div class="footer-content">
+                     <p>
+                        Made with love by <a href="https://www.codedex.io/@MarSianer" target="_blank">@sophiegabe</a>
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://github.com/Sophieegabe/Cafe-de-Wisteria" target="_blank">
+                            <img class="social-icon" src="assets/github-icon.png" alt="GitHub icon">
+                        </a>
+                        <a href="https://www.instagram.com/sophieegabe/" target="_blank">
+                            <img class="social-icon" src="assets/ig-icon.png" alt="Instagram icon">
+                        </a>
+                    </div>
+                </div>
+               
+                <img class="cloud-right" src="assets/cloud-small.png" alt="small cloud pixel art">
+            </footer>
+        </main>
 
-      form {
-      margin: 0 0px;
-      border: 2px solid white;
-      background-color: #ffbcd9;
-      padding: 20px;
-      }
+        <!-- I struggled with the JS part, but after watching tutorials and doing some research, I actually made it work 😄 -->
+        <script>
+            /*Background Music*/
+            const musicToggle = document.getElementById('music-toggle');
+            const musicIcon = document.getElementById('music-icon');
+            const backgroundMusic = document.getElementById('background-music');
 
-      textarea {
-      width: 100%;
-      box-sizing: border-box;
-      }
+            let isPlaying = false;
 
-      textarea::placeholder {
-      font-family: Pixelify Sans, sans-serif;
-      }
+            musicToggle.addEventListener('click', () => {
+                if (isPlaying) {
+                    backgroundMusic.pause();
+                    musicIcon.src = 'assets/music-off-icon.png';
+                    musicIcon.alt ='Music Off'
+                } else {
+                    backgroundMusic.play();
+                    musicIcon.src = 'assets/music-on-icon.png';
+                    musicIcon.alt ='Music On'
+                }
+            isPlaying = !isPlaying;
+            });
 
-      input, textarea {
-      border: 2px solid plum;
-      border-radius: 5px;
-      font-family: Pixelify Sans, sans-serif;
-      }
+            /*Dark-Light mode*/
+            const themeSwitch = document.getElementById('theme-switch-button');
+            const themeSwitchIcon = document.getElementById('theme-switch-icon');
+            const headerImage = document.getElementById('header-image');
 
-      input[type="submit"] {
-      background-color: white;
-      cursor: pointer;
-      font-family: Pixelify Sans, sans-serif;
-      font-weight: 600;
-      border-radius: 5px;
-      padding: 5px;
-      display: block;
-      margin: 0 auto;
-      }
+            const enableDarkmode = () => {
+                document.body.classList.add('darkmode');
+                themeSwitchIcon.src = 'assets/sun-icon.png';
+                themeSwitchIcon.alt = 'light Mode';
+                headerImage.src = 'assets/night-cafe.gif';
+                headerImage.alt = 'Cafe de Wisteria at night';
+            };
 
-      input[type="submit"]:hover {
-      background-color: plum;
-      transform: scale(1.02);
-      }
+            const disableDarkmode = () => {
+                document.body.classList.remove('darkmode');
+                themeSwitchIcon.src = 'assets/moon-icon.png';
+                themeSwitchIcon.alt = 'Dark Mode';
+                headerImage.src = 'assets/day-cafe.gif';
+                headerImage.alt = 'Cafe de Wisteria in daylight';
+            };
 
-      /*footer styles*/
-      footer > p {
-      margin: 30px 0;
-      text-align: center;
-      }
-    </style>
-  </head>
+            disableDarkmode();
 
-  <body>
-    <!--Here comes header section: image, name and nav elements for my cute café-->
-    <header>
-      <img id="header-img" alt="Café de Wisteria building covered with blooming wisteria flowers, cute black cat sitting on the window, in pixel art style" 
-      src="https://i.pinimg.com/originals/15/81/f2/1581f211ee2b27aa6dcf65de1b045b12.gif">
-      <h1>Café de Wisteria</h1>
-      <nav>
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#order-form">Place Your Order</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!--Here comes "Menu" section-->
-      <section>
-        <h2 id="menu">Menu</h2>
-        <div id="cakes">
-        <article>
-          <h3>Carrot Cake</h3>
-          <img width="200px" alt="A slice of carrot cake topped with a tiny marzipan carrot" src="assets/carrot_cake.png">
-          <p>A slice of sunshine made from golden carrots and cozy spices</p>
-          <p><i>$2.80</i></p>
-        </article>
-        <article>
-          <h3>Strawberry Cake</h3>
-          <img width="200px" alt="A slice of strawberry cake filled and topped with a fresh strawberry" src="assets/strawberry_cake.png">
-          <p>A sweet, fluffy cake with heavenly-tasting strawberries</p>
-          <p><i>$3.20</i></p>
-        </article>
-        <article>
-          <h3>Choco-banana Cake</h3>
-          <img width="200px" alt="A slice of chocolate banana cake, topped with banana slices and chocolate chips" src="assets/choco-banana_cake.png">
-          <p>A chocolatey banana dream, made for midnight cravings</p>
-          <p><i>$3.40</i></p>
-        </article>
-        </div>
-      </section>
-      <hr id="line">
-
-      <!--Here comes "Place Your Order" form-->
-      <section>
-        <h2 id="order-form">Place Your Order</h2>
-        <form>
-          <!--personal info-->
-           <label for="name">Name </label><input type="text" size="30" id="name"><br><br>
-           <label for="email">Email </label><input type="email" size="30" id="email"><br><br>
-          <!--Cake options-->
-          <h4>It's cake time! What flavor are you in the mood for today?</h4>
-           <label for="carrot">Carrot Cake </label><input type="number" min="0" max="10" id="carrot"><br><br>
-           <label for="strawberry">Strawberry Cake </label><input type="number" min="0" max="10" id="strawberry"><br><br>
-           <label for="choco-banana">Choco-banana Cake </label><input type="number" min="0" max="10" id="choco-banana"><br><br>
-          <!--Herbal teas-->
-          <h4>Would you like to try our Herbal Teas to help you relax and satisfy your sweet cravings?</h4>
-           <input type="radio" id="yes" name="option"><label for="yes">Yeah - I'd love to! </label>
-           <input type="radio" id="no" name="option"><label for="no">Naah, maybe next time. </label><br><br>
-          <h4>Which tea would you prefer?</h4>
-           <label for="lullaby">Lullaby Blend (Chamomile, Lavender, Rose Petals) </label><input type="number" min="0" max="10" id="lullaby"><br><br>
-           <label for="mint">Mint Moonlight (Peppermint, Spearmint, Lemon Balm) </label><input type="number" min="0" max="10" id="mint"><br><br>
-           <label for="ginger">Golden Hug (Ginger, Turmeric, Cinnamon, Honey Crystals) </label><input type="number" min="0" max="10" id="golden"><br><br>
-          <!--Add a note section-->
-          <h4><label for="comment">Let us know if you have any special requests or want to add a message.</label></h4>
-           <textarea rows="8" cols="" id="comment" placeholder="e.g., Please make it extra warm, it's a gift, or no cinnamon please."></textarea><br><br>
-          <!--Submit button-->
-          <input type="submit" value="Go To Checkout😻">
-        </form>
-      </section>
-    </main>
-
-    <!--Last section of this page <3-->
-    <footer>
-      <p>Made with love by <a href="https://www.codedex.io/@MarSianer">@sophiegabe</a></p>
-    </footer>
-  </body>
+            themeSwitch.addEventListener('click', () => {
+                if (!document.body.classList.contains('darkmode')) {
+                enableDarkmode();
+                } else {
+                disableDarkmode();
+                }
+            });
+        </script>
+    </body>
 </html>
+
 
 
