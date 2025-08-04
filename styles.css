@@ -293,16 +293,19 @@ footer a:hover {
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
   nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
   nav button {
-    font-size: 1rem;
-    height: 2.5rem;
+    font-size: 0.7rem;
+    height: 2rem;
     padding: 0 1rem;
   }
+  #menu-button, #theme-switch-button {
+      margin: 0;
+  }  
 
     
   /* Menu */  
@@ -356,5 +359,8 @@ footer a:hover {
   footer a {
     font-size: 0.7rem;
   }
+  .cloud-left {
+    top: -20px;
+}
 }
 
