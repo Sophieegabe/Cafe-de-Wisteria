@@ -292,7 +292,7 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  section {
+  #menu-section {
       padding: 2rem 3rem;
   }
       
