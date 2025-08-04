@@ -293,6 +293,7 @@ footer a:hover {
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
   nav {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
