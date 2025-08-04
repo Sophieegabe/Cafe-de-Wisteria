@@ -298,23 +298,20 @@ footer a:hover {
     align-items: center;
     flex-direction: row;
   }
-  nav button {
+  /*nav button {
     font-size: 0.7rem;
     height: 2rem;
     padding: 0 1rem;
   }
   #music-toggle, #theme-switch-button {
     padding: 0.4rem;
-  }
-  .menu-button, #theme-switch-button {
-      margin: 0;
-  }
+  }*/
  .menu-button {
     margin-left: 2rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
   #theme-switch-button {
-    margin-left: 3rem;
+    margin-left: 2rem;
     margin-right: 2rem;
  }
 
