@@ -303,7 +303,10 @@ footer a:hover {
     height: 2rem;
     padding: 0 1rem;
   }
-  #menu-button, #theme-switch-button {
+  #music-toggle, #theme-switch-button {
+    padding: 0.3rem;
+  }
+  .menu-button, #theme-switch-button {
       margin: 0;
   }  
 
