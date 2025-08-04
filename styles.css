@@ -306,6 +306,7 @@ footer a:hover {
     padding: 0 1rem;
   }
 
+    
   /* Menu */  
   .cakes-grid {
     grid-template-columns: 1fr;
@@ -315,32 +316,41 @@ footer a:hover {
     padding: 5rem 3rem;
   }
   #order-section {
-    padding: 5rem 3rem 8rem 3rem;  
+    padding: 5rem 1rem 8rem 1rem;  
   }
-
+  .section-title {
+      font-size: 1rem;
+      line-height: 1rem;
+  }
+    
+    
   /* Form */  
   form {
     padding: 2rem 1rem;
   }
   form label,
   .personal-info > label,
-  .fields > label,
+  .fields > label
+  {
+    font-size: 0.6rem;
+    margin: 0;
+  }
   h4 {
     font-size: 0.75rem;
-    margin: 0;
   }
   input,
   textarea {
     font-size: 0.6rem;
   }
   .personal-info > input {
-    width: 100%;
+    width: 70%;
   }
   input[type="submit"] {
     width: 100%;
     font-size: 0.9rem;
   }
 
+    
   /* Footer */
   .footer-content p {
     font-size: 0.7rem;
