@@ -287,9 +287,9 @@ footer a:hover {
 
 @media (max-width: 600px) {
   .cafe-name {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 2.5rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
   nav {
@@ -326,7 +326,7 @@ footer a:hover {
     gap: 1.5rem;
   }
   #menu-section {
-    padding: 5rem 3rem;
+    padding: 4rem 3rem;
   }
   .section-title {
       font-size: 1.5rem;
@@ -336,7 +336,7 @@ footer a:hover {
     
   /* Order */  
   #order-section {
-    padding: 5rem 2rem 8rem 2rem;  
+    padding: 4rem 2rem 8rem 2rem;  
   }
   form {
     padding: 2rem 1rem;
