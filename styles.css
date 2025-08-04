@@ -286,84 +286,62 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  .cafe-name {
+    font-size: 1.2rem;
+    /*padding-top: 2rem;
+    text-shadow: 1px 1px 3px rgb(197, 103, 214);*/
+  }
+  /*nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0.5rem;
+  }
+  .menu-button,
+  #theme-switch-button {
+    margin: 0.5rem 0;
+  }
+  nav button {
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+  }*/
 
-  /* Make cake cards stack in a column */
-  .cakes-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+  /* Menu */  
   #menu-section {
-      padding: 2rem 3rem;
+    padding: 5rem 3rem;
   }
-      
-  /* Shrink form text & inputs */
+  #order-section {
+    padding: 5rem 3rem 8rem 3rem;  
+  }
+
+  /* Form */  
   form {
     padding: 2rem 1rem;
   }
-
   form label,
   .personal-info > label,
   .fields > label,
   h4 {
     font-size: 0.75rem;
   }
-
   input,
   textarea {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
-
   .personal-info > input {
     width: 100%;
   }
-
   input[type="submit"] {
     width: 100%;
     font-size: 0.9rem;
   }
 
-  /* Cafe title adjustment */
-  .cafe-name {
-    font-size: 1.2rem;
-    padding-top: 2rem;
-    text-shadow: 1px 1px 3px rgb(197, 103, 214);
-  }
-
-  /* Footer font and layout tweaks */
+  /* Footer */
   .footer-content p {
     font-size: 0.7rem;
-    line-height: 1.2rem;
   }
-
   footer a {
     font-size: 0.7rem;
-  }
-
-  .social-icon {
-    width: 20px;
-  }
-
-  .cloud-left,
-  .cloud-right {
-    display: none;
-  }
-
-  /* Nav tweaks for stacked layout */
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem 0.5rem;
-  }
-
-  .menu-button,
-  #theme-switch-button {
-    margin: 0.5rem 0;
-  }
-
-  nav button {
-    font-size: 1rem;
-    height: 2.5rem;
-    padding: 0 1rem;
   }
 }
 
