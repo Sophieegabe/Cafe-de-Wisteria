@@ -288,13 +288,14 @@ footer a:hover {
 @media (max-width: 600px) {
   .cafe-name {
     font-size: 0.9rem;
-    padding-top: 2rem;
+    line-height: 2rem;
+    padding-top: 1rem;
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
-  /*nav {
-    flex-direction: column;
+  nav {
+    flex-direction: raw;
     height: auto;
-    padding: 1rem 0.5rem;*/
+    padding: 1rem 0.5rem;
   }
   .menu-button,
   #theme-switch-button {
@@ -303,7 +304,7 @@ footer a:hover {
   nav button {
     font-size: 1rem;
     height: 2.5rem;
-    padding: 0 1rem;
+    padding: 0.1rem;
   }
 
     
@@ -317,7 +318,7 @@ footer a:hover {
   }
   .section-title {
       font-size: 1.5rem;
-      line-height: 1rem;
+      line-height: 3rem;
   }
     
     
@@ -360,10 +361,7 @@ footer a:hover {
   }
   .cloud-left {
     width: 27%;
-    top: -50px;
+    top: 20px;
   }
-  .cloud-right {
-    width: 25%;
-}
 }
 
