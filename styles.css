@@ -288,8 +288,8 @@ footer a:hover {
 @media (max-width: 600px) {
   .cafe-name {
     font-size: 0.9rem;
-    line-height: 2rem;
-    padding-top: 1rem;
+    line-height: 3rem;
+    padding-top: 0.5rem;
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
   nav {
