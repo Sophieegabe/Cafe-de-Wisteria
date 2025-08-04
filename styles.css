@@ -313,8 +313,13 @@ footer a:hover {
   #theme-switch-button {
     margin-left: 2rem;
     margin-right: 2rem;
- }
-
+    width: 16px;
+    height: 16px;
+  }
+  #music-icon {
+    width: 16px;
+    height: 16px;
+  }
     
   /* Menu */  
   .cakes-grid {
