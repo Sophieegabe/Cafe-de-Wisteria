@@ -287,6 +287,6 @@ footer a:hover {
 
 @media (max-width: 600px) {
   .cafe-name {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
