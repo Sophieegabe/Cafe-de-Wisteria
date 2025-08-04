@@ -330,7 +330,8 @@ footer a:hover {
   }
   .section-title {
       font-size: 1.5rem;
-      line-height: 3rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
   }
     
     
