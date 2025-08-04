@@ -304,11 +304,19 @@ footer a:hover {
     padding: 0 1rem;
   }
   #music-toggle, #theme-switch-button {
-    padding: 0.3rem;
+    padding: 0.4rem;
   }
   .menu-button, #theme-switch-button {
       margin: 0;
-  }  
+  }
+ .menu-button {
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+  #theme-switch-button {
+    margin-left: 3rem;
+    margin-right: 2rem;
+ }
 
     
   /* Menu */  
