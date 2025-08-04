@@ -291,10 +291,10 @@ footer a:hover {
     padding-top: 2rem;
     text-shadow: 1px 1px 3px rgb(197, 103, 214);
   }
-  nav {
+  /*nav {
     flex-direction: column;
     height: auto;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem;*/
   }
   .menu-button,
   #theme-switch-button {
@@ -315,16 +315,16 @@ footer a:hover {
   #menu-section {
     padding: 5rem 3rem;
   }
-  #order-section {
-    padding: 5rem 1rem 8rem 1rem;  
-  }
   .section-title {
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 1rem;
   }
     
     
-  /* Form */  
+  /* Order */  
+  #order-section {
+    padding: 5rem 2rem 8rem 2rem;  
+  }
   form {
     padding: 2rem 1rem;
   }
@@ -358,5 +358,12 @@ footer a:hover {
   footer a {
     font-size: 0.7rem;
   }
+  .cloud-left {
+    width: 27%;
+    top: -50px;
+  }
+  .cloud-right {
+    width: 25%;
+}
 }
 
