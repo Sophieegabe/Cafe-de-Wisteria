@@ -296,6 +296,7 @@ footer a:hover {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     flex-direction: row;
   }
   nav button {
     font-size: 1rem;
@@ -356,7 +357,6 @@ footer a:hover {
     font-size: 0.7rem;
   }
   .cloud-left {
-    width: 27%;
     top: 0;
   }
 }
